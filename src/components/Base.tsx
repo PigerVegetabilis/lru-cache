@@ -48,7 +48,7 @@ export default function Base(){
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, x: -100 }}
-                            transition={{ duration: 0.2 }}
+                            transition={{ duration: 0.75 }}
                             className="lru-component-wrapper"
                             onClick={() => swapComps(item.key)}
                             style = {{backgroundColor: `rgba(100, 200, 255, ${-1 * (-0.1 - (components.findIndex(ite => ite.key === item.key) / components.length))})`}}   

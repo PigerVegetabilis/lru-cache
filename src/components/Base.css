@@ -1,0 +1,12 @@
+.lru-base{
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 60%;
+    height: 200px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    justify-content: right;
+    padding-right: 1%;
+}

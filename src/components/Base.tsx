@@ -51,7 +51,7 @@ export default function Base(){
                             transition={{ duration: 0.2 }}
                             className="lru-component-wrapper"
                             onClick={() => swapComps(item.key)}
-                            style = {{backgroundColor: `rgba(100, 200, 255, ${1 - (components.findIndex(ite => ite.key === item.key) / components.length)})`}}   
+                            style = {{backgroundColor: `rgba(100, 200, 255, ${-1 * (-0.1 - (components.findIndex(ite => ite.key === item.key) / components.length))})`}}   
                             
                         >
                             {item.key}

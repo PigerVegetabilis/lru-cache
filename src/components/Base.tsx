@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import "./Base.css"
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import './Comp.css';
 
 export default function Base(){
 

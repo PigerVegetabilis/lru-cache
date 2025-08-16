@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import Base from "./Base";
 export default function Lru(){
     return (

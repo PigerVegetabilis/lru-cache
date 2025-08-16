@@ -1,6 +1,5 @@
 import type { ReactElement } from "react"
 import "./Comp.css"
-import { motion } from "motion/react";
 
 interface CompProps{
     val : number;

@@ -1,28 +1,24 @@
 import { Button } from "@mui/material";
 import "./Base.css"
 import { useState } from "react";
-import Comp from "./Comp";
 import { AnimatePresence, motion } from "motion/react";
-import type { style } from "motion/react-client";
 
 export default function Base(){
 
     type Component = {
         key : number;
-        place: number;
     }
 
     const capacity : number = 5;
     const [components, setComponents] = useState<Array<Component>>([]);
     const [number, setNumber] = useState(0);
-    const [place, setPlace] = useState(0);
 
 
     function addComp(){
         if (number >= capacity){
             setComponents(components.splice(0, 1))
         }
-        setComponents([...components, {key: number + 1, place: place}]);
+        setComponents([...components, {key: number + 1}]);
         setNumber(number + 1);
         console.log(components);
     }
@@ -32,7 +28,7 @@ export default function Base(){
         if (clicked === components.length - 1) return;
         const newComps = [...components];
         newComps.splice(clicked, 1);
-        newComps.push({key: id, place: id});
+        newComps.push({key: id});
         setComponents(newComps);
     }
 
